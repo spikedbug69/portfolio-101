@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ajay M Nambiar | Cybersecurity Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>:root{--paper:#f3f2f8;--ink:#14123a;--card:#fff;--blue:#3e4a9e;--pink:#d56a82;--sun:#e6bd62;--mint:#74c4a6;--mute:#4d4a78;--sh:var(--ink);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#12102e;--ink:#f2f0ff;--card:#1c1a46;--mute:#b3afe0;--sh:#000;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#12102e;--ink:#f2f0ff;--card:#1c1a46;--mute:#b3afe0;--sh:#000;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "Bricolage Grotesque",system-ui,sans-serif}
+a{color:var(--ink);font-weight:600}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:14px;flex-wrap:wrap}
+nav b{font-weight:800;font-size:20px;letter-spacing:-.03em}
+nav div{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:15px}nav a:hover{color:var(--pink)}
+.band nav,.band nav a,.band nav b a{color:#fff!important}
+#theme,.chip{background:var(--card);border:2px solid var(--ink);color:var(--ink);border-radius:20px;padding:3px 12px;font:600 14px "Bricolage Grotesque",sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--sun);color:#14123a}
+.band{background:var(--blue);color:#fff;border-bottom:3px solid var(--ink)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:28px 0 64px}
+h1{font-weight:800;font-size:clamp(46px,9vw,112px);line-height:.84;letter-spacing:-.035em;margin:0 0 24px;position:relative}
+.stk{display:inline-block;background:var(--sun);color:#14123a;font:800 clamp(16px,2.2vw,24px)/1 "Bricolage Grotesque";letter-spacing:0;padding:8px 14px;border:3px solid #14123a;border-radius:10px;transform:rotate(-5deg);box-shadow:4px 4px 0 #14123a;position:absolute;right:0;top:-6px}
+.lede{font-size:21px;max-width:28em;margin:0 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:12px;font-weight:800;text-decoration:none;border:3px solid #14123a;background:#fff;color:#14123a!important;box-shadow:4px 4px 0 #14123a;transition:transform .12s,box-shadow .12s}
+.btn.p{background:var(--pink)}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #14123a}
+.term{background:#0d0b2b;color:#e8e6ff;border:3px solid #14123a;border-radius:14px;box-shadow:8px 8px 0 #14123a;font:400 14px/1.65 "IBM Plex Mono",monospace;overflow:hidden}
+.term header{display:flex;gap:7px;align-items:center;padding:10px 14px;background:#1d1a52;border-bottom:2px solid #14123a;color:#a9a5e8;font-size:13px}
+.term header i{width:11px;height:11px;border-radius:50%;background:var(--pink)}.term header i+i{background:var(--sun)}.term header i+i+i{background:var(--mint)}
+.tbox{height:300px;overflow:auto;padding:14px 16px}
+.tbox p{margin:0 0 8px;white-space:pre-wrap;word-break:break-word}
+.tbox .c{color:var(--mint)}
+.tin{display:flex;gap:8px;border-top:2px solid #14123a;padding:10px 16px;background:#13113a}
+.tin input{flex:1;min-width:0;background:none;border:0;color:#fff;font:inherit;font-size:16px}
+.tin input:focus-visible{outline:none}
+.tip{display:flex;gap:8px;flex-wrap:wrap;padding:0 16px 14px;background:#13113a}
+.tip button{background:none;border:1.5px solid #5b57b8;color:#cfcbff;border-radius:16px;padding:2px 11px;font:inherit;font-size:13px;cursor:pointer}
+.tip button:hover{background:var(--sun);color:#14123a;border-color:var(--sun)}
+.mq{background:var(--sun);color:#14123a;border-bottom:3px solid var(--ink);overflow:hidden;white-space:nowrap;font-weight:800;font-size:22px;letter-spacing:-.02em}
+.mq div{display:inline-block;padding:12px 0;animation:mq 38s linear infinite}
+.mq span{margin:0 22px}.mq span::after{content:"✦";margin-left:44px;color:var(--pink)}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:68px 0}
+h2{font-size:clamp(36px,6vw,64px);letter-spacing:-.03em;line-height:.95;margin:0 0 12px;font-weight:800}
+.sub{color:var(--mute);margin:0 0 34px;max-width:36em}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:44px}
+.about p{margin:0 0 16px;max-width:34em}
+.box{background:var(--card);border:3px solid var(--ink);border-radius:16px;box-shadow:6px 6px 0 var(--sh);padding:22px}
+.photo{display:block;width:100%;max-width:220px;aspect-ratio:1;object-fit:cover;border:3px solid var(--ink);border-radius:14px;margin:0 0 20px;box-shadow:4px 4px 0 var(--pink)}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 16px}dt{color:var(--mute);font-size:15px}dd{margin:0;font-weight:600}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px;align-items:start}
+details.ch{background:var(--card);border:3px solid var(--ink);border-radius:16px;box-shadow:6px 6px 0 var(--sh);overflow:hidden}
+details.ch summary{list-style:none;cursor:pointer;padding:0}
+details.ch summary::-webkit-details-marker{display:none}
+.top{display:flex;justify-content:space-between;align-items:center;padding:10px 18px;border-bottom:3px solid var(--ink);font-weight:800;font-size:14px;color:#14123a}
+.k0 .top{background:var(--mint)}.k1 .top{background:var(--sun)}.k2 .top{background:var(--pink)}.k3 .top{background:#aaa6d8}
+.top b::after{content:"+";font-size:22px;line-height:1}details[open] .top b::after{content:"–"}
+.ch h3{margin:0;padding:16px 18px 4px;font-size:23px;line-height:1.15;letter-spacing:-.03em}
+.ch small{display:block;padding:0 18px 16px;color:var(--mute);font-size:15px}
+.body{padding:0 18px 18px;border-top:2px dashed var(--ink);padding-top:14px}
+.body ul{margin:0 0 12px;padding-left:18px}.body li{margin-bottom:6px}
+.tags{display:flex;gap:7px;flex-wrap:wrap}.tags span{border:2px solid var(--ink);border-radius:8px;padding:0 9px;font-size:14px;font-weight:600}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.tl{margin:0;padding:0;list-style:none;border-left:4px solid var(--ink)}
+.tl li{position:relative;padding:0 0 28px 26px}
+.tl li::before{content:"";position:absolute;left:-11px;top:6px;width:18px;height:18px;border-radius:50%;background:var(--pink);border:3px solid var(--ink)}
+.tl time{color:var(--mute);font-size:15px;font-weight:600}.tl h3{margin:2px 0 6px;font-size:21px;letter-spacing:-.02em;line-height:1.25}.tl ul{margin:0;padding-left:18px}
+h3.s{margin:0 0 14px;font-size:26px;letter-spacing:-.03em}
+.kit{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.kit div{border:3px solid var(--ink);border-radius:16px;padding:20px;box-shadow:5px 5px 0 var(--sh);color:#14123a}
+.kit div:nth-child(4n+1){background:var(--mint)}.kit div:nth-child(4n+2){background:var(--sun)}.kit div:nth-child(4n+3){background:#e6b1bd}.kit div:nth-child(4n){background:#b9b6e0}
+.kit h3{margin:0 0 6px;font-size:20px}.kit p{margin:0;font-size:15.5px}
+.two ul{margin:0;padding:0;list-style:none}.two li{padding:11px 0;border-bottom:2px solid var(--ink);font-weight:600}.two li span{display:block;color:var(--mute);font-size:15px;font-weight:400}
+.cta{background:var(--pink);color:#14123a;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.cta .sub{color:#14123a}
+.mail{font-size:clamp(26px,5.4vw,64px);font-weight:800;letter-spacing:-.03em;word-break:break-word;text-decoration:none;color:#14123a;border-bottom:6px solid #14123a}
+.mail:hover{background:var(--sun)}
+.links{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}.links a{background:#fff;color:#14123a;border:3px solid #14123a;border-radius:12px;padding:6px 18px;text-decoration:none;box-shadow:4px 4px 0 #14123a}
+footer{padding:26px 0 40px;color:var(--mute);font-size:15px}
+.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding:6px 0 22px}
+#q{flex:1 1 220px;min-width:0;padding:10px 14px;border:3px solid var(--ink);border-radius:12px;background:var(--card);color:var(--ink);font:inherit;font-size:16px}
+#count{color:var(--mute);margin:0}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;padding:18px 0 56px}
+.card{background:var(--card);border:3px solid var(--ink);border-radius:16px;box-shadow:6px 6px 0 var(--sh);overflow:hidden;display:flex;flex-direction:column}
+.prev{height:140px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font:500 15px "IBM Plex Mono",monospace;border-bottom:3px solid var(--ink)}
+.prev img{width:100%;height:100%;object-fit:cover}
+.card .info{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h2{font-size:20px;letter-spacing:-.02em;line-height:1.25;margin:0}
+.meta{color:var(--mute);margin:0;font-size:15px}
+.tag{align-self:flex-start;background:var(--sun);color:#14123a;font-size:13.5px;font-weight:800;border:2px solid var(--ink);border-radius:20px;padding:0 10px}
+.acts{display:flex;gap:16px;margin-top:auto;padding-top:10px}
+.empty{color:var(--mute)}
+@media(max-width:820px){.hero,.about,.cols,.two{grid-template-columns:1fr}.stk{position:static;margin-bottom:14px;display:table}.tbox{height:260px}}
+@media(prefers-reduced-motion:reduce){.mq div{animation:none}*{transition:none!important;scroll-behavior:auto!important}}
+
+nav div{display:flex}
+
+.card .acts span{font-size:15px}</style></head><body>
+<div class="band"><div class="wrap">
+<nav><b>Ajay M Nambiar</b><div><a href="#work">Projects</a><a href="#path">Experience</a><a href="#kit">Toolkit</a><a href="#certs">Certificates</a><a href="#contact">Contact</a><button id="theme" type="button" aria-label="Switch colour theme">Theme</button></div></nav>
+<header class="hero"><div>
+<h1>Ajay M<br>Nambiar<span class="stk">a.k.a. Spike</span></h1>
+<p class="lede"><strong>I break web apps, then I help fix them.</strong> Cybersecurity undergrad from Kannur, running CTFs, building security tools, and looking for my first security or DevSecOps role.</p>
+<div class="btns"><a class="btn p" href="#contact">Hire me</a><a class="btn" href="#work">See my work</a></div></div>
+<div id="term"></div></header></div></div>
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+<div class="wrap">
+<section id="about"><div class="about"><div><h2>About</h2>
+<p>I’m a Computer Science Engineering student passionate about cybersecurity, penetration testing, and digital privacy.</p>
+<p>I enjoy exploring how systems work, uncovering vulnerabilities, and building practical solutions.</p>
+<p>Always learning, experimenting, and exploring technology beyond the surface.</p></div>
+<div class="box"><dl><dt>Studying</dt><dd>B.Tech CSE, College of Engineering Thalassery, 2023 to expected 2027</dd><dt>Based in</dt><dd>Kannur, Kerala, India</dd><dt>Open to</dt><dd>Internships, entry-level cybersecurity or DevSecOps roles, mini-project collaboration</dd><dt>Ask me about</dt><dd>Pentest basics, web app security, bug bounty methods, Linux tools, reporting</dd></dl></div></div></section>
+<section id="work"><h2>Challenge board</h2><p class="sub">Each card is a project I took on. Open one to see how it went.</p><div class="board" id="board"></div></section>
+<section id="path"><div class="cols"><div><h2>Experience</h2><p class="sub">Community leadership and hands-on analysis.</p><ol class="tl" id="exp"></ol></div><div><h2>Training</h2><p class="sub">Courses and events along the way.</p><ol class="tl" id="trn"></ol></div></div></section>
+<section id="kit"><h2>Toolkit</h2><p class="sub">What I reach for, grouped by the job it does.</p><div class="kit" id="kitg"></div></section>
+<section id="proof"><div class="cols two"><div><h3 class="s">Recognition</h3><ul id="rec"></ul></div><div><h3 class="s">Learning</h3><ul id="lrn"></ul></div></div></section>
+<section id="certs"><h2>Certificates</h2><p class="sub">Courses, programs and competitions. Original files are available on request.</p><div id="grid" style="padding-top:0"></div></section>
+</div>
+<div class="cta"><div class="wrap"><section id="contact"><h2>Let’s talk</h2><p class="sub">Hiring for a junior security role, or running a CTF I should join? Send me a message.</p><a class="mail" id="mail"></a><div class="links" id="lk"></div></section></div></div>
+<div class="wrap"><footer>Ajay M Nambiar, 2026. <q>The quieter you become, the more you are able to hear.</q></footer></div>
+<script>
+const EMAIL = "ajay9nambiar@gmail.com";
+const LINKS = { github: "https://github.com/spikedbug69", linkedin: "https://linkedin.com/in/ajay-m-nambiar-05636b322", x: "https://x.com/ajaymnambiar2" };
+
+const PORTS = [
+  { port: "22", name: "ssh", label: "Linux and Kali", text: "Daily driver. Linux administration, Bash, Kali tooling and Windows for comparison." },
+  { port: "53", name: "dns", label: "Networking", text: "TCP/IP, DNS, HTTP/HTTPS, firewalls, IDS/IPS, packet analysis." },
+  { port: "443", name: "https", label: "Web app security", text: "OWASP Top 10 testing, XSS, CSRF, CORS and clear write-ups. Powers the Vulnerability Checker." },
+  { port: "1337", name: "ctf", label: "CTF and forensics", text: "Teach digital forensics live and design steganography challenges at MuLearn." },
+  { port: "2375", name: "docker", label: "DevSecOps", text: "Docker, Git, CI/CD and the SafeDB-CI migration reporter." },
+  { port: "4444", name: "msf", label: "Exploitation tools", text: "Metasploit, Nmap, Shodan and Ghidra for authorised testing and labs." },
+  { port: "8080", name: "proxy", label: "Burp Suite", text: "Intercepting and replaying requests to find broken logic and injection bugs." },
+];
+
+const PROJECTS = [
+  { status: "Final stage", tone: "b", title: "Vulnerability Checker", role: "Team lead", points: ["Leading a team building a web app that scans a target website and lists the OWASP vulnerabilities it finds.", "Currently finishing the final stage of programming."], tags: ["OWASP Top 10", "Web security", "Team leadership"] },
+  { status: "Ongoing", tone: "a", title: "Multi-Tenant eBPF/XDP Orchestration Daemon", role: "Independent project, written in Rust", points: ["Networking daemon for isolated multi-tenant container environments on Linux.", "Bypasses the traditional Linux networking path for speed, with traffic routing, tenant-level isolation and edge-level security enforcement."], tags: ["Rust", "eBPF", "XDP", "Linux", "Containers"] },
+  { status: "Ongoing", tone: "a", title: "Privacy-Preserving Federated Learning", role: "Independent research", points: ["Building a federated learning framework that defends against Gradient Inversion attacks.", "Designing a Convolutional Variational Bottleneck (CVB) and measuring the privacy and accuracy trade-off across architectures and image datasets."], tags: ["Python", "Machine learning", "Privacy"] },
+  { status: "Built", tone: "c", title: "SafeDB-CI", role: "CLI developer and documentation lead", points: ["Git-based CLI that monitors and reports database migrations inside CI/CD pipelines.", "Logs schema changes and migration status so every change stays visible and traceable.", "Wrote the install, usage and pipeline integration docs."], tags: ["DevSecOps", "CI/CD", "Git", "CLI"], link: "https://github.com/arju-z/SafeDB-CI" },
+  { status: "Built", tone: "c", title: "Vuln-Bank Analysis", role: "Web pentest and reporting", points: ["Deployed an intentionally vulnerable banking app in Docker, found its flaws, and wrote a concise report with steps to reproduce each one."], tags: ["Docker", "Web pentest", "Reporting"] },
+  { status: "Ongoing", tone: "a", title: "TryHackMe and CTF practice", role: "Labs on detection, evasion and exploitation basics", points: ["Regular hands-on rooms and CTFs, including Advent of Cyber and c0c0n."], tags: ["TryHackMe", "CTF"] },
+  { status: "Ongoing", tone: "a", title: "100 Day Cyber Challenge", role: "One hands-on security task every day", points: ["A daily practice log of labs, tools and write-ups."], tags: ["CTF", "Labs", "Write-ups"] },
+  { status: "Built", tone: "c", title: "More builds", role: "Smaller tools and hackathon work", points: ["NASA Space Apps Challenge: real-time celestial body monitoring with NASA’s APIs.", "CV Mitra: hackathon tool that checks resume ATS friendliness, extracts skills and suggests fixes.", "GhostTrack: open-source OSINT tool adapted for my own investigations."], tags: [], links: [["NASA repo", "https://github.com/arju-z/NASA"], ["CV Mitra live", "https://cv-mitra-score-checker.vercel.app/"]] },
+];
+
+const EXPERIENCE = [
+  { when: "May 2026 to present", title: "Cybersecurity Core Team Member, MuLearn Foundation", points: ["Organise bootcamps and Capture the Flag competitions for cybersecurity learners.", "Deliver live digital forensics sessions with hands-on CTF demos.", "Design forensics and steganography challenges for participants."] },
+  { when: "Jan to Feb 2026", title: "Breach Point Analysis Intern, ISAC", points: ["Analysed vulnerabilities and took part in simulated cyberattack scenarios.", "Identified threats and recommended mitigations.", "Studied real-world case studies to inform defensive practice."] },
+  { when: "June 2025", title: "Data Science and Machine Learning Intern, Techmagi", points: ["Seven-day internship on data science and machine learning fundamentals."] },
+];
+const TRAINING = [
+  ["Feb 2026", "PostgreSQL course, University of Michigan"], ["Dec 2025", "Advent of Cyber, TryHackMe"], ["Jul to Oct 2025", "µLearn OWASP Bootcamp"],
+  ["Jun to Sep 2025", "ISAC Bug Bounty Program"], ["Feb 2025", "National Cybersecurity Conclave, NIT Calicut"], ["2025", "CS50: Introduction to Cybersecurity"],
+];
+const KIT = [
+  ["Security work", "Vulnerability assessment, penetration testing, web app security, OWASP Top 10, XSS, CSRF, CORS, bug bounty methodology, threat and risk analysis, digital forensics"],
+  ["Tools", "Burp Suite, Nmap, Wireshark, Metasploit, Shodan, Ghidra, Kali Linux"],
+  ["Networking", "TCP/IP, DNS, HTTP/HTTPS, firewalls, IDS/IPS, reconnaissance, port scanning, packet analysis"],
+  ["Languages", "Python, C, Rust, JavaScript, HTML, CSS, MySQL"],
+  ["DevSecOps", "Git, GitHub, Docker, CI/CD, Linux, AWS IAM"],
+  ["Design", "Figma for UI and UX"],
+];
+const RECOGNITION = [["National Cybersecurity Hackathon, NIT Calicut", "Finalist"], ["HackZero ’26 CTF", "Certificate of Excellence, top 25 of 500"], ["c0c0n CTF", "Participant"]];
+const LEARNING = [["NCBBR Bug Bounty Researcher Program", "ISAC, completed"], ["Google Cybersecurity", "Completed"], ["IBM Pentester", "Completed"], ["NPTEL Cybersecurity and Privacy", "Completed"], ["PostgreSQL", "University of Michigan"], ["CS50: Introduction to Cybersecurity", "Harvard, completed"], ["Advent of Cyber", "TryHackMe"]];
+
+const CERTS = [{"title": "CS50: Introduction to Cybersecurity", "issuer": "Harvard (CS50)", "category": "Course", "year": "2025", "file": "cs50-cybersecurity.pdf"}, {"title": "Bug Bounty Researcher Program", "issuer": "ISAC (NCBBR)", "category": "Program", "year": "2025", "file": "ncbbr-bug-bounty-researcher.pdf"}, {"title": "Google Cybersecurity", "issuer": "Google", "category": "Course", "year": "", "file": "google-cybersecurity.pdf"}, {"title": "IBM Pentester", "issuer": "IBM", "category": "Course", "year": "", "file": "ibm-pentester.pdf"}, {"title": "Cybersecurity and Privacy", "issuer": "NPTEL", "category": "Course", "year": "", "file": "nptel-cybersecurity-privacy.pdf"}, {"title": "PostgreSQL", "issuer": "University of Michigan", "category": "Course", "year": "2026", "file": "postgresql-michigan.pdf"}, {"title": "Advent of Cyber", "issuer": "TryHackMe", "category": "Course", "year": "2025", "file": "advent-of-cyber-tryhackme.pdf"}, {"title": "National Cybersecurity Hackathon, Finalist", "issuer": "NIT Calicut", "category": "Competition", "year": "", "file": "national-cybersecurity-hackathon-finalist.pdf"}, {"title": "HackZero '26 CTF, Certificate of Excellence", "issuer": "Unstop", "category": "Competition", "year": "2026", "url": "https://unstop.com/certificate-preview/a90e52ee-5dbd-4e21-9938-c5f7ccca9ac4"}];
+
+var $=function(s){return document.querySelector(s)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+var li=function(a,f){return a.map(f).join("")};
+$("#board").innerHTML=li(PROJECTS,function(p,i){
+var lab=p.status==="Built"?"Solved":p.status==="Ongoing"?"In progress":"Final push";
+var ls=p.links||(p.link?[["View on GitHub",p.link]]:[]);
+return '<details class="ch k'+(i%4)+'"><summary><div class="top"><span>'+lab+'</span><b></b></div><h3>'+esc(p.title)+'</h3><small>'+esc(p.role)+'</small></summary><div class="body"><ul>'+li(p.points,function(t){return "<li>"+esc(t)+"</li>"})+"</ul>"+(ls.length?"<p>"+li(ls,function(l){return '<a href="'+esc(l[1])+'" style="margin-right:16px">'+esc(l[0])+"</a>"})+"</p>":"")+(p.tags.length?'<div class="tags">'+li(p.tags,function(t){return "<span>"+esc(t)+"</span>"})+"</div>":"")+"</div></details>"});
+$("#exp").innerHTML=li(EXPERIENCE,function(e){return "<li><time>"+esc(e.when)+"</time><h3>"+esc(e.title)+"</h3><ul>"+li(e.points,function(t){return "<li>"+esc(t)+"</li>"})+"</ul></li>"});
+$("#trn").innerHTML=li(TRAINING,function(t){return "<li><time>"+esc(t[0])+"</time><h3>"+esc(t[1])+"</h3></li>"});
+$("#kitg").innerHTML=li(KIT,function(k){return "<div><h3>"+esc(k[0])+"</h3><p>"+esc(k[1])+"</p></div>"});
+var pairs=function(a){return li(a,function(p){return "<li>"+esc(p[0])+"<span>"+esc(p[1])+"</span></li>"})};
+$("#rec").innerHTML=pairs(RECOGNITION);$("#lrn").innerHTML=pairs(LEARNING);
+$("#grid").innerHTML='<div id="grid" style="display:contents">'+li(CERTS,function(c){
+var host=c.url?new URL(c.url).hostname.replace(/^www\./,"")+" certificate":"PDF document";
+return '<article class="card"><div class="prev">'+esc(host)+'</div><div class="info"><span class="tag">'+esc(c.category)+"</span><h2>"+esc(c.title)+'</h2><p class="meta">'+esc(c.issuer)+(c.year?", "+esc(c.year):"")+'</p><div class="acts">'+(c.url?'<a href="'+esc(c.url)+'" target="_blank" rel="noopener">View</a>':"<span>Original file on request</span>")+"</div></div></article>"})+"</div>";
+$("#grid").style.cssText="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px";
+$("#mq").innerHTML=li([1,2,3,4],function(){return li(["Web pentesting","Bug bounty","OWASP Top 10","Burp Suite","Rust and eBPF","CTF forensics","Docker","DevSecOps","Python","Linux"],function(t){return "<span>"+t+"</span>"})});
+$("#mail").href="mailto:"+EMAIL;$("#mail").textContent=EMAIL;
+$("#lk").innerHTML='<a href="'+LINKS.github+'">GitHub</a><a href="'+LINKS.linkedin+'">LinkedIn</a><a href="'+LINKS.x+'">X</a>';
+function out(c){
+if(c==="help")return ["whoami  skills  projects  experience","certs   contact  flag      clear"];
+if(c==="whoami")return ["Ajay M Nambiar, a.k.a. Spike.","B.Tech CSE, CE Thalassery. Web app security, pentesting, DevSecOps."];
+if(c==="skills")return PORTS.map(function(p){return p.port+"/open  "+p.label});
+if(c==="projects")return PROJECTS.map(function(p){return "["+p.status+"] "+p.title});
+if(c==="experience")return EXPERIENCE.map(function(e){return e.when+": "+e.title});
+if(c==="certs")return ["Scroll down to the Certificates section."];
+if(c==="contact")return [EMAIL,LINKS.github,LINKS.linkedin];
+if(c==="flag")return ["FLAG{h1re_aj4y_sp1k3_2026}","You found it. Now say hello: "+EMAIL];
+if(c.indexOf("sudo")===0)return ["Nice try. Permission denied."];
+return ["command not found: "+c+". Try help."]}
+$("#term").innerHTML='<div class="term"><header><i></i><i></i><i></i><span>spike@portfolio: ~</span></header><div class="tbox" id="tb" aria-live="polite"><p>Hi, I’m Ajay. This terminal is live.</p><p>Type help, or tap a command below.</p></div><form class="tin" id="tf"><span class="c">$</span><input id="ti" aria-label="Type a command" placeholder="try: flag" autocapitalize="off" autocorrect="off" spellcheck="false"></form><div class="tip" id="tp"></div></div>';
+function run(raw){var c=raw.trim().toLowerCase();if(!c)return;var tb=$("#tb");if(c==="clear"){tb.innerHTML="";return}
+var h='<p class="c">$ '+esc(raw)+"</p>"+out(c).map(function(t){return "<p>"+esc(t)+"</p>"}).join("");tb.insertAdjacentHTML("beforeend",h);tb.scrollTop=tb.scrollHeight}
+$("#tf").addEventListener("submit",function(e){e.preventDefault();run($("#ti").value);$("#ti").value=""});
+["whoami","skills","projects","flag"].forEach(function(c){var b=document.createElement("button");b.type="button";b.textContent=c;b.addEventListener("click",function(){run(c)});$("#tp").appendChild(b)});
+$("#theme").addEventListener("click",function(){var r=document.documentElement,cur=r.getAttribute("data-theme");var dark=cur?cur==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.setAttribute("data-theme",dark?"light":"dark")});
+</script></body></html>
